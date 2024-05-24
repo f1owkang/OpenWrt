@@ -1,5 +1,3 @@
-<div align="center">
-<img width="768" src="https://github.com/breeze303/ipq60xx-6.1/blob/main/include/logo.png"/>
 <h1>OpenWrt — 云编译</h1>
 
 
