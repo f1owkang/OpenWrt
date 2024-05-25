@@ -103,8 +103,6 @@ jobs:
         cp $PATCHES_FILE_1 $OPENWRT_PATH/feeds/luci
         cd $OPENWRT_PATH/feeds/luci
         git am 0001-show-soc-status-on-luci.patch
-        git am 0003-add-coremark-luci.patch
-        git am 0004-add-coremark-packages.patch
   
     - name: Load Custom Configuration(加载自定义配置)
       run: |
