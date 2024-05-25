@@ -10,8 +10,6 @@ env:
   REPO_BRANCH: main
   CONFIG_FILE: configs/ipq60xx-wifi(emmc).config
   PATCHES_FILE_1: patches/0001-show-soc-status-on-luci.patch
-  PATCHES_FILE_2: patches/0003-add-coremark-luci.patch
-  PATCHES_FILE_3: patches/0004-add-coremark-packages.patch
   DIY_SCRIPT: diy-script.sh
   CLASH_KERNEL: arm64
   CACHE_TOOLCHAIN: true
@@ -103,8 +101,6 @@ jobs:
         git config --global user.name "OpenWrt Builder"
         git config --global user.email "buster-openwrt@ovvo.uk"
         cp $PATCHES_FILE_1 $OPENWRT_PATH/feeds/luci
-        cp $PATCHES_FILE_2 $OPENWRT_PATH/feeds/luci
-        cp $PATCHES_FILE_3 $OPENWRT_PATH/feeds/luci
         cd $OPENWRT_PATH/feeds/luci
         git am 0001-show-soc-status-on-luci.patch
         git am 0003-add-coremark-luci.patch
