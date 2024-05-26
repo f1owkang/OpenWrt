@@ -104,8 +104,8 @@ jobs:
         cp $PATCHES_FILE_1 $OPENWRT_PATH/feeds/luci
         cp $PATCHES_FILE_2 $OPENWRT_PATH/feeds/packages
         
-        cd $OPENWRT_PATH/feeds/luci
-        git am 0001-show-soc-status-on-luci.patch
+        # cd $OPENWRT_PATH/feeds/luci
+        # git am 0001-show-soc-status-on-luci.patch
         cd $OPENWRT_PATH/feeds/packages
         git am 0005-fix-aria2.patch
 
