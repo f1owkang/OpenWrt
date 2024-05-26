@@ -106,8 +106,8 @@ jobs:
         
         # cd $OPENWRT_PATH/feeds/luci
         # git am 0001-show-soc-status-on-luci.patch
-        cd $OPENWRT_PATH/feeds/packages
-        git am 0005-fix-aria2.patch
+        # cd $OPENWRT_PATH/feeds/packages
+        # git am 0005-fix-aria2.patch/
 
   
     - name: Load Custom Configuration(加载自定义配置)
